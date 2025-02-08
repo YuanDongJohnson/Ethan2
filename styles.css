@@ -170,4 +170,48 @@ footer {
     height: 300px;
   }
 }
+/* ... 之前的样式保持不变 ... */
 
+.about-details {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.about-details h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-details h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3B82F6;
+}
+
+.about-details p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.achievements {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.achievement-img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.achievement-img:hover {
+    transform: scale(1.05);
+}
+
+/* ... 其余样式保持不变 ... */
