@@ -45,9 +45,9 @@ export function Carousel() {
           <Image
             src={img || "/placeholder.svg"}
             alt={`Slide ${index + 1}`}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center 30%" // 调整这个值以确保脸部可见
+            fill
+            sizes="(max-width: 768px) 100vw, 1400px"
+            style={{ objectFit: "cover", objectPosition: "center 30%" }}
             priority={index === 0}
           />
         </div>
