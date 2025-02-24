@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  distDir: "out",
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -11,9 +9,10 @@ const nextConfig = {
       },
     ],
   },
-  // 移除实验性功能，使用静态导出的基本配置
-  trailingSlash: true,
+  // Cloudflare Pages 特定配置
+  experimental: {
+    optimizeCss: true,
+  },
 }
 
 module.exports = nextConfig
-
